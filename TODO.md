@@ -1,0 +1,15 @@
+- [x] Adjust aspect ratio in detect_license_plate to 0.5 < aspect_ratio < 10 for better motorcycle plate detection
+- [x] Add OCR preprocessing with Gaussian blur and adaptive thresholding in extract_vehicle_number
+- [x] Modify logic to fallback to full image OCR if cropped license plate text is too short (len < 4)
+- [x] Fix live camera detection to properly store violations in history
+- [x] Update dashboard to show real-time statistics from violation data
+- [x] Fix API mismatch between mobile app and backend for violation creation
+- [x] Make analytics screen display dynamic data instead of static values
+- [x] Fix upload detection to store ALL detections in history and update dashboard/analytics
+- [x] Update ViolationContext to properly refresh data when violations are created from upload screen
+- [x] Add pie chart to Analytics screen showing violation types distribution
+- [ ] Improve OCR accuracy by adjusting PSM modes, adding morphological operations, and increasing minimum text length
+- [ ] Switch to OEM 1 for better legacy engine performance
+- [ ] Add filtering for balanced letter-to-number ratios in extracted texts
+- [ ] Test live camera functionality on actual device
+- [ ] Verify number plate extraction works with real images
